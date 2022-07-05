@@ -1,1 +1,1 @@
-# resepies
+# Recipes. Project from the odin project. In this page you're gonna find some recipes like lasagna, burger and more.I've build this page to practice HTML and CSS.
