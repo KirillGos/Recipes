@@ -1,0 +1,172 @@
+/*Reset Browser Default Style */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f0eebe;
+}
+
+
+h1,
+h2 {
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+/*Navigation*/
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navigation {
+    background-color: rgb(250, 156, 101);
+    color: white;
+    height: 60px;
+}
+
+.navigation .logo {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navigation .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation ul  li {
+    margin-left: 20px;
+}
+.navigation a:hover {
+    color: lightblue;
+}
+/*Header*/
+.header a {
+    text-decoration: none;
+    
+}
+.header {
+    background-color: rgb(240, 192, 122);
+    color: black;
+    min-height: 400px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img {
+    max-width: 200px;
+    border-radius: 20%;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*Boxes*/
+.box a {
+    text-decoration: none;
+}
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.box {
+    flex: 1;
+    background: #adbfd4;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+    padding: 15px 20px;
+}
+
+.boxes-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.box .box-images {
+    height: 150px;
+    width: auto;
+    border-radius: 15px;
+    border: solid black 2px;
+}
+
+.box p {
+    color: black;
+    font-size: 20px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boxes .container a {
+    text-decoration: none;
+}
+.box p {
+    text-align: center;
+}
+
+/*Footer*/
+footer  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #75a6dd;
+    height: 50px;
+}
+/*Responsive Design*/
+@media(max-width: 760px) {
+    .header .container {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    
+}
+
