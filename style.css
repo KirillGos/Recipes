@@ -12,7 +12,9 @@ body {
     color: #333;
     background-color: #f0eebe;
 }
-
+img {
+    max-width: 100%;
+}
 
 h1,
 h2 {
@@ -108,7 +110,7 @@ ul {
 .boxes .container {
     display: flex;
     justify-content: space-between;
-    height: 50vh;
+    
 }
 
 .box {
@@ -133,6 +135,7 @@ ul {
     width: auto;
     border-radius: 15px;
     border: solid black 2px;
+    margin-bottom: 10px;
 }
 
 .box p {
@@ -140,14 +143,24 @@ ul {
     font-size: 20px;
 }
 .box {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.box:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 30px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    
+}
 .boxes .container a {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .box p {
     text-align: center;
 }
@@ -161,12 +174,16 @@ footer  {
     height: 50px;
 }
 /*Responsive Design*/
-@media(max-width: 760px) {
+@media(max-width: 900px) {
     .header .container {
         flex-direction: column;
         padding: 20px;
         text-align: center;
+        font-size: 15px;
     }
-    
+    .boxes .container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
