@@ -1,4 +1,7 @@
 /*Reset Browser Default Style */
+html {
+    height: 100%;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,8 +14,11 @@ body {
     line-height: 1.5;
     color: #333;
     background-color: #f0eebe;
+    height: 100%;
 }
-
+img {
+    max-width: 100%;
+}
 
 h1,
 h2 {
@@ -72,7 +78,7 @@ ul {
 .header {
     background-color: rgb(240, 192, 122);
     color: black;
-    min-height: 400px;
+    min-height: 60vh;
 }
 
 .header h1 {
@@ -98,8 +104,23 @@ ul {
     display: flex;
     align-items: center;
 }
+.header p {
+    margin-bottom: 15px;
+}
 
-
+.header .container .explore {
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px;
+    padding: 10px 60px;
+    background: #7b9ec7;
+    width: 0px;
+    border-radius: 15px;
+    color: black;
+}
+.header .container .explore:hover {
+    transform: scale(1.2);
+}
 
 /*Boxes*/
 .box a {
@@ -107,8 +128,9 @@ ul {
 }
 .boxes .container {
     display: flex;
+    flex: 1;
     justify-content: space-between;
-    height: 50vh;
+    
 }
 
 .box {
@@ -133,6 +155,7 @@ ul {
     width: auto;
     border-radius: 15px;
     border: solid black 2px;
+    margin-bottom: 10px;
 }
 
 .box p {
@@ -140,14 +163,24 @@ ul {
     font-size: 20px;
 }
 .box {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.box:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 30px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    
+}
 .boxes .container a {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .box p {
     text-align: center;
 }
@@ -161,12 +194,27 @@ footer  {
     height: 50px;
 }
 /*Responsive Design*/
-@media(max-width: 760px) {
+@media(max-width: 900px) {
     .header .container {
         flex-direction: column;
         padding: 20px;
         text-align: center;
     }
-    
+    .header .container .explore a {
+        width: 100%;
+    }
+    .header img {
+        height: 190px;
+    }
+    .header {
+        display: block;
+    }
+    .header .container h1 {
+        font-size: 20px;
+    }
+    .boxes .container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
