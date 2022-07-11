@@ -78,7 +78,7 @@ ul {
 .header {
     background-color: rgb(240, 192, 122);
     color: black;
-    min-height: 60vh;
+    min-height: 400px;
 }
 
 .header h1 {
@@ -132,7 +132,9 @@ ul {
     justify-content: space-between;
     
 }
-
+.box-section {
+   background: #ecde8a;
+}
 .box {
     flex: 1;
     background: #adbfd4;
@@ -148,7 +150,7 @@ ul {
     align-items: center;
     justify-content: center;
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .box .box-images {
@@ -172,7 +174,6 @@ ul {
 }
 .box:hover {
     box-shadow:rgba(0,0,0,0.8) 0px 5px 30px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    
 }
 .boxes .container a {
     text-decoration: none;
@@ -180,12 +181,118 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .box p {
     text-align: center;
 }
+.box-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+/*About Section*/
+.about {
+    height: 400px;
+    background: #a0b2c7;
+}
 
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 25px;
+}
+.about-boxes .container{
+    display: flex;
+    flex: 1;
+    gap: 15px;
+}
+.about-boxes .container .about-box {
+    background-color: rgb(70, 108, 230);
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+/*Message Form*/
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-size: 18px;
+    color: black;
+  }
+  
+  input,
+  textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+  .button {
+    padding-left: 90px; 
+  }
+  
+  button {
+    margin-left: .5em;
+    background-color: #e69e5c;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  button:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 30px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  }
+
+.form {
+    height: 400px;
+    background-color: rgb(240, 192, 122);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form {
+    background-color: #7b9ec7;
+    flex-shrink: 0;
+  
+}
 
 /*Footer*/
 footer  {
@@ -226,4 +333,3 @@ footer  {
         font-size: 25px;
     }
 }
-
