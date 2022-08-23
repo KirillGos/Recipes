@@ -1,1 +1,8 @@
-# Recipes. Project from the odin project. In this page you're gonna find some recipes like lasagna, burger and more.I've build this page to practice HTML and CSS.
+# Recipes.
+This is recipes web page and I've build it to practice CSS and HTML.
+
+#Recipes
+In this page you're gonna find recipes from American culture like burgers, steaks etc.
+
+#Tool 
+I used flexbox for page's layout.
